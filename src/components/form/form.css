@@ -1,0 +1,36 @@
+form {
+  background-color: rgb(51, 51, 51);
+  width: 384px;
+  height: 406px;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-radius: 15px;
+  padding: 28px 32px;
+
+}
+
+.event-name {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.event-theme {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.event-date {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

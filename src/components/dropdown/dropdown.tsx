@@ -1,15 +1,22 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import type { Ref } from 'react';
 import './dropdown.css';
 
 interface DropdownDto {
     options: string[];
-    ref: Ref<HTMLOptionElement>
+    name?: string;
+    ref?: Ref<HTMLSelectElement>;
+    value?: string;
+    onChange?: any;
 }
-const Dropdown = ({options, ref}: DropdownDto) => {
+const Dropdown = ({options, name, ...rest}: DropdownDto) => {
     return (
-        <select className="dropdown-class" name="" id="">
+        <select {...rest} name={name} className="dropdown-class" defaultValue="">
+            <option value="" disabled>
+                Selecione uma opção
+            </option>
            {options.map((option, index) => (
-            <option ref={ref} key={index} value={option}>
+            <option key={index} value={option}>
                 {option}
             </option>
            ))}

@@ -3,8 +3,10 @@ input {
     height: 40px;
     border: 1px solid;
     width: 300px;
-    color: rgb(94, 94, 94);
+    color: #FFFF;
     padding: 16px 8px;
+    border-color: #4A4949;
+    border-radius: 8px;
 }
 
 input::placeholder {

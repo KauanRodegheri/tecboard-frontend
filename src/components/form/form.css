@@ -1,7 +1,6 @@
 form {
   background-color: rgb(51, 51, 51);
   width: 384px;
-  height: 406px;
   max-height: 90%;
   display: flex;
   flex-direction: column;
@@ -24,6 +23,12 @@ form {
 }
 
 .event-date {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.event-image {
   display: flex;
   flex-direction: column;
   gap: 8px;

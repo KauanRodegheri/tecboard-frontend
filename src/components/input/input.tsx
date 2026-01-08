@@ -1,15 +1,18 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import type { Ref } from "react";
 import './input.css';
 
 interface InputDto {
   type: string;
+  name?: string;
   placeholder?: string;
-  className: string;
-  ref: Ref<HTMLInputElement>
+  ref?: Ref<HTMLInputElement>;
+  value: string;
+  onChange: any;
 }
 
-export default function Input({ type, placeholder, className, ref}: InputDto) {
+export default function Input({ type, placeholder, ref, name, ...rest}: InputDto) {
   return (
-    <input className={className} type={type} placeholder={placeholder} ref={ref} />
+    <input {...rest} className="input-form" type={type} placeholder={placeholder} ref={ref} name={name}/>
   )
 }

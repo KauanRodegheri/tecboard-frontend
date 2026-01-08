@@ -9,11 +9,12 @@ interface FooterDto {
 
 const Footer = ({label, has_year}: FooterDto) => {
     const date = new Date();
-    let year = null;
+    let year: number | null = null;
     
     if (has_year) {
         year = date.getFullYear();    
     }
+
     return (
         <footer>
             <img className="logo--footer" src={Logo} alt="logo-footer" />

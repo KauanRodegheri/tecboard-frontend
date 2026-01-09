@@ -3,14 +3,10 @@
     height: 40px;
     border: 1px solid;
     width: 300px;
-    color: #ffffff;
+    color: #a8a8a8;
     padding: 8px 16px;
     border-radius: 8px;
     border: 1px solid #4A4949;
-}
-
-.dropdown-class::placeholder {
-  color: #4A4949
 }
 
 .dropdown-class option {

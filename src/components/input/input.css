@@ -4,11 +4,19 @@ input {
     border: 1px solid;
     width: 300px;
     color: #FFFF;
-    padding: 16px 8px;
+    padding: 8px 16px;
     border-color: #4A4949;
     border-radius: 8px;
 }
 
 input::placeholder {
-  color: #4A4949
+  color: #a8a8a8
+}
+
+input[type="date"] {
+  color: #a8a8a8
+}
+
+input[type="date"].has-value {
+  color: #FFF
 }

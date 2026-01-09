@@ -50,3 +50,8 @@
     width: 282px;
     height: 237px;
 }
+
+.card-container:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

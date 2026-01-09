@@ -29,7 +29,6 @@ export default function FormEvent({dropdown, callBack}: FormEventInput) {
   */
   function handleChange(e: ChangeEvent<HTMLInputElement>) {
     const { name, value } = e.target;
-    console.log(name, value)
 
     setForm((prev: Record<string, string>) => {
       return {
@@ -96,10 +95,11 @@ export default function FormEvent({dropdown, callBack}: FormEventInput) {
               <LabelForm label="Data do evento" htmlFor="date"/>
               <Input 
                 type="date" 
-                placeholder={undefined} 
+                placeholder={undefined}
                 name="eventDate"
                 value={form.eventDate}
                 onChange={handleChange}
+                className={form.eventDate.length > 0 ? 'has-value' : ''}
                 >
               </Input>
             </div>

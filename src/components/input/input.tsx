@@ -9,10 +9,11 @@ interface InputDto {
   ref?: Ref<HTMLInputElement>;
   value: string;
   onChange: any;
+  className?: string;
 }
 
 export default function Input({ type, placeholder, ref, name, ...rest}: InputDto) {
   return (
-    <input {...rest} className="input-form" type={type} placeholder={placeholder} ref={ref} name={name}/>
+    <input className="input-form" type={type} placeholder={placeholder} ref={ref} name={name} {...rest} />
   )
 }
